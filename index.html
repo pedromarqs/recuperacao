@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-b">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Muitos Filmes Online</title>
+</head>
+
+<body class="bg-light bg-gradient">
+  <!-- main -->
+  <main class="container-fluid p-0">
+    <!-- header -->
+    <header class="container-fluid p-0 fixed-top">
+      <ul class="nav d-flex align-items-center" style="background-color: #050714;">
+        <li class="nav-item logo">
+          <a class="nav-link text-light d-flex align-items-center" href="#banner">
+            <img class="iconlogo" src="img/logo.png" alt="icon">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light btn-effect" title="Lista" href="#cards">Assista agora</a>
+        </li>
+
+        <li class="nav-item ms-auto">
+          <div class="d-flex justify-content-between">
+            <a class="nav-link text-light btn-effect" title="Instagram" href="https://google.com.br"
+              target="_blank"><i class="bi bi-instagram"></i></a>
+            <a class="nav-link text-light btn-effect" title="Facebook" href="https://google.com.br"
+              target="_blank"><i class="bi bi-facebook"></i></a>
+            <a class="nav-link text-light btn-effect" title="Login" href="#modal-form"><i
+                class="bi bi-person-circle"></i></a>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <!-- /header -->
+
+    <!-- banner  -->
+    <div id="banner" class="banner vh-100 position-relative">
+      <div class="container position-absolute bottom-0 left-0 m-3">
+        <h1 class="text-white t-shadow">Filmes de graça</h1>
+        <p class="text-white t-shadow">
+          Muito e muitos filmes pra vc ver e ficar a vontate
+        </p>
+        <a class="btn btn-outline-info" href="#cards">Veja nossos filmes</a>
+      </div>
+    </div>
+    <!-- /banner      -->
+
+    <!-- cards -->
+    <div id="cards" class="container-fluid pb-4">
+      <div class="row row-cols-3 row-cols-lg-6 g-2">
+        <div class="col">
+          <a class="card card-item" href="cards/card01.html">
+            <img src="img/cards/007.jpeg" class="card-img-top" alt="Cartaz do filme Luca"/>
+            <div class="card-body">
+              <h5 class="card-title">007</h5>
+              <p class="card-text">Filme legal de ver e vc vai se divertir.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a class="card card-item" href="cards/card02.html">
+            <img src="img/cards/007.jpeg" class="card-img-top" alt="Cartaz do filme Cruella" />
+            <div class="card-body">
+              <h5 class="card-title">007</h5>
+              <p class="card-text">Filme legal de ver e vc vai se divertir.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a class="card card-item" href="cards/card03.html">
+            <img src="img/cards/007.jpeg" class="card-img-top" alt="Cartaz do filme Dois irmãos" />
+            <div class="card-body">
+              <h5 class="card-title">007</h5>
+              <p class="card-text">Filme legal de ver e vc vai se divertir.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a class="card card-item" href="cards/card04.html">
+            <img src="img/cards/007.jpeg" class="card-img-top" alt="Cartaz do filme Soul" />
+            <div class="card-body">
+              <h5 class="card-title">007</h5>
+              <p class="card-text">Filme legal de ver e vc vai se divertir.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a class="card card-item" href="cards/card05.html">
+            <img src="img/cards/007.jpeg" class="card-img-top" alt="Cartaz do filme Mulan" />
+            <div class="card-body">
+              <h5 class="card-title">007</h5>
+              <p class="card-text">Filme legal de ver e vc vai se divertir.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <a class="card card-item" href="cards/card06.html">
+            <img src="img/cards/007.jpeg" class="card-img-top" alt="Cartaz do filme Toy Story 4" />
+            <div class="card-body">
+              <h5 class="card-title">007</h5>
+              <p class="card-text">Filme legal de ver e vc vai se divertir.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- /main -->
+
+  <!-- modal    -->
+  <div id="modal-form" class="fixed-top bottom-0 justify-content-center">
+    <div class="modal-interna bg-light container-fluid position-relative b-shadow">
+      <a class="fechar btn-close position-absolute top-0 end-0 m-3"
+        href="javascript:history.back()"></a>
+      <form class="formulario">
+        <h2>LOGIN</h2>
+        <div class="mb-3">
+          <label for="login" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="login" placeholder="Informe seu e-mail" required>
+        </div>
+        <div class="mb-3">
+          <label for="senha" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="senha" placeholder="Informe sua senha" required>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="mostrarsenha">
+          <label class="form-check-label" for="mostrarsenha">Mostrar Senha
+        </div>
+        <div class="buttons d-flex justify-content-between g-1" style="gap:10px">
+          <button type="reset" class="btn w-100" style="background-color: rgb(255, 72, 0); color: white;">Limpar</button>
+          <button type="submit" class="btn w-100" style="background-color: #068DFF; color: white;">Entrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- /modal -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+</html>

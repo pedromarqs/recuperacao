@@ -1,0 +1,132 @@
+body {
+    font-size: 20px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.badge {
+    font-weight: normal;
+}
+
+.iconlogo {
+    height: 32px;
+    padding-right: 5px;
+}
+
+.logo {
+    transition: all .5s;
+}
+
+.btn-effect {
+    transition: all .5s;
+}
+
+.t-shadow {
+    text-shadow: 0 2px 5px #000;
+}
+
+.b-shadow {
+    box-shadow: 0 0 7px 7px rgb(0 0 0 / 20%)
+}
+
+#banner-carousel {
+    margin-bottom: 10px;
+}
+
+#banner {
+    background: url(img/banner.jpg) center center fixed no-repeat;
+    background-size: cover;
+}
+
+#cards {
+    padding-top: 52px;
+}
+
+.card-item {
+    border: 1px solid rgba(255,255,255,.12);
+    box-shadow: 0 0 5px 5px rgb(0 0 0 / 10%);
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+.card-title {
+    color: #1E3CB2;
+}
+
+.card-item:hover {
+    box-shadow: 0 0 7px 7px rgb(0 0 0 / 20%);
+    transform: scale(1.1);
+}
+
+.card-text {
+    font-size: 1.2rem;
+    color: #050714;
+}
+
+.img-fluid {
+    margin-top: .5rem;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.btn-effect:hover {
+    transform: scale(1.5);
+}
+
+
+#modal-form {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#modal-form:target {
+    display: flex;
+    align-items: center;
+}
+
+.formulario {
+    display:flex;
+    flex-direction:column;
+}
+
+
+.modal-interna{
+    width: 500px;
+    padding:30px;
+    border-radius: 10px;
+    margin: 0 10px;
+    min-width: 340px;    
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .nav-link {
+        padding: .6rem .4rem;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    header .nav {
+        padding-left: .3rem;
+    }
+}
+
+.player_youtube {
+    margin-top: 120px;
+}
+
+.player_youtube2 {
+    margin-top: 60px;
+}
+
+.player_youtube3 {
+    margin-top: 30px;
+}
